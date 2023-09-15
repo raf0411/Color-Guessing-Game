@@ -77,6 +77,10 @@ body {
   margin: 0 auto;
   padding-top: 2rem;
   max-width: 37.5rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .colors{
@@ -95,4 +99,10 @@ body {
 
 .answer-info{
   color: #2c8e99;
+}
+
+@media screen and (max-width: 600px) {
+  .guesses-container{
+    grid-template-columns: 1fr;
+  }
 }
