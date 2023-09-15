@@ -28,17 +28,9 @@ displayRGB();
 
 function setAnswer() {
   let guess;
-
   answer = `rgb(${red}, ${green}, ${blue})`;
-
   guess = Math.floor(Math.random() * (max - min + 1) + min);
-
-  console.log(guess);
-
   const guessesColor = document.getElementById(`color-${guess}`);
-
-  console.log(`rgb(${red}, ${green}, ${blue})`);
-
   guessesColor.style.backgroundColor = answer;
 }
 
